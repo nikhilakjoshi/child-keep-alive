@@ -26,7 +26,7 @@ export default function Home() {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       window.parent.postMessage(
         JSON.stringify({ newKey }),
-        "http://localhost:3000",
+        "https://parent-keep-alive.vercel.app",
       );
       setStatus("Posted to parent...");
     };
